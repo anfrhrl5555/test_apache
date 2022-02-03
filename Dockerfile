@@ -1,5 +1,5 @@
 FROM tomcat
-ADD ROOT /usr/local/tomcat/webapps/ROOT/
+ADD ./* /usr/local/tomcat
 WORKDIR /usr/local/tomcat/bin
 RUN ./shutdown.sh && ./startup.sh
 EXPOSE 8080
